@@ -211,5 +211,6 @@ def handle_message(**payload):
         else:
             web_client.chat_postMessage(channel=channel, text="```%s```" % (dump_items(items)))
 
+logging.info("Starting Slack RTM client...")
 rtm_client = RTMClient(token=SLACK_TOKEN)
 rtm_client.start()
