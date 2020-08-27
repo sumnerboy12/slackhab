@@ -7,7 +7,7 @@ import json
 from slack import RTMClient
 
 # initialise logging (default to INFO)
-logging.basicConfig(level=os.getenv("SLACKHAB_DEBUG", "INFO"))
+logging.basicConfig(level=os.getenv("SLACKHAB_LOG_LEVEL", "INFO"))
 
 # retrieve our env vars
 SLACK_TOKEN = os.getenv("SLACKHAB_SLACK_TOKEN", None)
