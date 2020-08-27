@@ -7,11 +7,11 @@ Requires an old-style Real-Time Messaging bot which permits use of the Slack RTM
 #### Steps to run
 
 1. Create a new Slack RTM bot integration
-  - Click [here](https://app.slack.com/apps-manage) and login to your Slack team
-  - Click *Custom Integrations* -> *Bots* -> *Add to Slack*
-  - Give your bot a name and click *Add bot integration*
-  - Copy the *API Token* and use in `SLACKHAB_SLACK_TOKEN` below
-  - Configure your bots name, description, icon, and add to any channels you wish to acces it from
+    1. Click [here](https://app.slack.com/apps-manage) and login to your Slack team
+    2. Click *Custom Integrations* -> *Bots* -> *Add to Slack*
+    3. Give your bot a name and click *Add bot integration*
+    4. Copy the *API Token* and use in `SLACKHAB_SLACK_TOKEN` below
+    5. Configure your bots name, description, icon, and add to any channels you wish to acces it from
 
 2. You need to find the user id of your new bot. The easiest way to is run `slackhab` with `SLACKHAB_LOG_LEVEL=DEBUG`. When `slackhab` starts it will connect to Slack using your token and log some details about your bot, including the user id. Copy this into `SLACKHAB_SLACK_USER_UD` and restart.
 
